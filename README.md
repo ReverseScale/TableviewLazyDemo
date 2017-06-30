@@ -1,1 +1,85 @@
 # TableviewLazyDemo
+
+![image](http://og1yl0w9z.bkt.clouddn.com/17-6-30/49388575.jpg)
+
+![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) ![](https://img.shields.io/cocoapods/dt/PPNetworkHelper.svg
+) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
+
+作为开发中使用率最高的控件，UITableView 又有许多重复的代码，实际常用到的就那几处代理功能，所以封装了一套简易的 TableView 工具，前期只做了常用的功能，支持根据业务需求扩展。
+
+### 我的技术博客：https://reversescale.github.io 欢迎来踩
+
+![image](http://og1yl0w9z.bkt.clouddn.com/17-6-30/40713547.jpg)
+
+## Requirements 要求
+* iOS 7+
+* Xcode 8+
+
+## Usage 使用方法
+### 第一步 将工具文件夹拖入工程文件
+文件夹：PackageTableView 
+### 第二部 配置方法
+#### 1.引入头文件
+```
+// 工具头文件
+#import "PackageDataSource.h"、
+// 自定义 Cell 头文件
+#import "TestTableViewCell.h"
+```
+#### 2.签代理、声明属性
+```
+@interface ViewController ()<UITableViewDelegate>
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) PackageDataSource *welDataSource;
+@end
+```
+#### 3.放置TableView
+```
+- (void)setupTableView {
+self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
+self.tableView.backgroundColor = [UIColor whiteColor];
+self.tableView.estimatedRowHeight = 44;
+self.tableView.rowHeight = UITableViewAutomaticDimension;
+[self.view addSubview:self.tableView];
+
+[self.tableView registerNib:[UINib nibWithNibName:@"TestTableViewCell" bundle:nil] forCellReuseIdentifier:@"TestTableViewCell"];
+}
+```
+#### 4.实现代理传数据
+```
+- (void)setWelTableView {
+self.welDataSource = [[PackageDataSource alloc] initWithIdentifier:@"TestTableViewCell" configureBlock:^(TestTableViewCell *cell, id model, NSIndexPath *indexPath) {
+cell.wordLabel.text = [model objectForKey:[NSString stringWithFormat:@"%ld", indexPath.row]];
+}];
+
+self.tableView.delegate = self;
+self.tableView.dataSource = self.welDataSource;
+}
+```
+#### 5.viewDidLoad 中实现
+```
+- (void)viewDidLoad {
+[super viewDidLoad];
+// Do any additional setup after loading the view, typically from a nib.
+
+[self setupTableView];
+[self setWelTableView];
+
+[self.welDataSource addModels:@[@{@"0":@"我是第一行"},@{@"1":@"我是第二行"}]];
+// reload
+//    [self.table reloadData];
+}
+```
+
+注：自定义 Cell 文件见 Demo。
+
+使用简单、效率高效、进程安全~~~如果你有更好的建议,希望不吝赐教!
+### 你的star是我持续更新的动力!
+===
+
+## 联系方式:
+* WeChat : WhatsXie
+* Email : ReverseScale@iCloud.com
+* QQ : 1129998515
+
+
