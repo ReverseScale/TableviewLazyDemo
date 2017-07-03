@@ -2,7 +2,7 @@
 
 ![image](http://og1yl0w9z.bkt.clouddn.com/17-6-30/22248406.jpg)
 
-![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) ![](https://img.shields.io/cocoapods/dt/PPNetworkHelper.svg
+![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) ![](https://img.shields.io/badge/download-381K-brightgreen.svg
 ) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
 作为开发中使用率最高的控件，UITableView 又有许多重复的代码，实际常用到的就那几处代理功能，所以封装了一套简易的 TableView 工具，前期只做了常用的功能，支持根据业务需求扩展。
