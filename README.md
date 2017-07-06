@@ -11,7 +11,7 @@
 
 | 名称 |1.列表页 |2.展示页 |
 | ------------- | ------------- | ------------- |
-| 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/18359264.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/19750327.jpg) |
+| 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/44848621.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/19750327.jpg) |
 | 描述 | 通过 storyboard 搭建基本框架 | TableviewLazy封装创建 |
 
 
