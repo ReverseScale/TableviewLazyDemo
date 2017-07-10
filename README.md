@@ -7,8 +7,6 @@
 
 作为开发中使用率最高的控件，UITableView 又有许多重复的代码，实际常用到的就那几处代理功能，所以封装了一套简易的 TableView 工具，前期只做了常用的功能，支持根据业务需求扩展。
 
-### 我的技术博客：https://reversescale.github.io 欢迎来踩
-
 | 名称 |1.列表页 |2.展示页 |
 | ------------- | ------------- | ------------- |
 | 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/44848621.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/19750327.jpg) |
@@ -80,9 +78,11 @@ self.tableView.dataSource = self.welDataSource;
 使用简单、效率高效、进程安全~~~如果你有更好的建议,希望不吝赐教!
 ### 你的star是我持续更新的动力!
 
-## 联系方式:
+## License 许可证
+TableviewLazyDemo 使用 MIT 许可证，详情见 LICENSE 文件。
+
+
+## Contact 联系方式:
 * WeChat : WhatsXie
 * Email : ReverseScale@iCloud.com
-* QQ : 1129998515
-
-
+* Blog : https://reversescale.github.io
