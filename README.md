@@ -12,6 +12,12 @@
 | 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/44848621.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/19750327.jpg) |
 | 描述 | 通过 storyboard 搭建基本框架 | TableviewLazy封装创建 |
 
+## Advantage 框架的优势
+* 1.文件少，代码简洁
+* 2.不依赖任何其他第三方库
+* 3.使用Block回调机制，效率高，结构清晰
+* 4.支持XIB/纯代码方式实现
+* 5.具备较高自定义性
 
 ## Requirements 要求
 * iOS 7+
