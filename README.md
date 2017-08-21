@@ -85,7 +85,7 @@ self.tableView.dataSource = self.welDataSource;
 
 
 ## License 许可证
-OrderedDictionaryTools 使用 MIT 许可证，详情见 LICENSE 文件。
+TableviewLazyDemo 使用 MIT 许可证，详情见 LICENSE 文件。
 
 
 ## Contact 联系方式:
