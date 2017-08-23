@@ -30,7 +30,7 @@
 #### 1.引入头文件
 ```
 // 工具头文件
-#import "PackageDataSource.h"、
+#import "PackageDataSource.h"
 // 自定义 Cell 头文件
 #import "TestTableViewCell.h"
 ```
