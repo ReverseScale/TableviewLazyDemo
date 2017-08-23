@@ -19,6 +19,10 @@
 		342DFAB51EFCDF55003DED55 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342DFAB31EFCDF55003DED55 /* TestTableViewCell.xib */; };
 		342DFABF1EFCF012003DED55 /* PackageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 342DFABE1EFCF012003DED55 /* PackageDataSource.m */; };
 		342DFAC21EFCF110003DED55 /* PackageTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 342DFAC11EFCF110003DED55 /* PackageTableDelegate.m */; };
+		34C1938B1F4D603E00CD7F72 /* DynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C1938A1F4D603E00CD7F72 /* DynamicTableViewController.m */; };
+		34C1938F1F4D60A800CD7F72 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C1938D1F4D60A800CD7F72 /* CustomTableViewCell.m */; };
+		34C193901F4D60A800CD7F72 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34C1938E1F4D60A800CD7F72 /* CustomTableViewCell.xib */; };
+		34C193931F4D616300CD7F72 /* LazyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C193921F4D616300CD7F72 /* LazyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,13 @@
 		342DFABE1EFCF012003DED55 /* PackageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDataSource.m; sourceTree = "<group>"; };
 		342DFAC01EFCF110003DED55 /* PackageTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageTableDelegate.h; sourceTree = "<group>"; };
 		342DFAC11EFCF110003DED55 /* PackageTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageTableDelegate.m; sourceTree = "<group>"; };
+		34C193891F4D603E00CD7F72 /* DynamicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTableViewController.h; sourceTree = "<group>"; };
+		34C1938A1F4D603E00CD7F72 /* DynamicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTableViewController.m; sourceTree = "<group>"; };
+		34C1938C1F4D60A800CD7F72 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		34C1938D1F4D60A800CD7F72 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		34C1938E1F4D60A800CD7F72 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		34C193911F4D616300CD7F72 /* LazyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyTableViewController.h; sourceTree = "<group>"; };
+		34C193921F4D616300CD7F72 /* LazyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +129,16 @@
 				342DFA2A1EFCA4E3003DED55 /* AppDelegate.m */,
 				342DFA2C1EFCA4E3003DED55 /* ViewController.h */,
 				342DFA2D1EFCA4E3003DED55 /* ViewController.m */,
+				34C193911F4D616300CD7F72 /* LazyTableViewController.h */,
+				34C193921F4D616300CD7F72 /* LazyTableViewController.m */,
+				34C193891F4D603E00CD7F72 /* DynamicTableViewController.h */,
+				34C1938A1F4D603E00CD7F72 /* DynamicTableViewController.m */,
 				342DFAB11EFCDF55003DED55 /* TestTableViewCell.h */,
 				342DFAB21EFCDF55003DED55 /* TestTableViewCell.m */,
 				342DFAB31EFCDF55003DED55 /* TestTableViewCell.xib */,
+				34C1938C1F4D60A800CD7F72 /* CustomTableViewCell.h */,
+				34C1938D1F4D60A800CD7F72 /* CustomTableViewCell.m */,
+				34C1938E1F4D60A800CD7F72 /* CustomTableViewCell.xib */,
 				342DFA2F1EFCA4E3003DED55 /* Main.storyboard */,
 				342DFA321EFCA4E3003DED55 /* Assets.xcassets */,
 				342DFA341EFCA4E3003DED55 /* LaunchScreen.storyboard */,
@@ -278,6 +296,7 @@
 				342DFA361EFCA4E3003DED55 /* LaunchScreen.storyboard in Resources */,
 				342DFAB51EFCDF55003DED55 /* TestTableViewCell.xib in Resources */,
 				342DFA331EFCA4E3003DED55 /* Assets.xcassets in Resources */,
+				34C193901F4D60A800CD7F72 /* CustomTableViewCell.xib in Resources */,
 				342DFA311EFCA4E3003DED55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,11 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C193931F4D616300CD7F72 /* LazyTableViewController.m in Sources */,
+				34C1938B1F4D603E00CD7F72 /* DynamicTableViewController.m in Sources */,
 				342DFAC21EFCF110003DED55 /* PackageTableDelegate.m in Sources */,
 				342DFA2E1EFCA4E3003DED55 /* ViewController.m in Sources */,
 				342DFAB41EFCDF55003DED55 /* TestTableViewCell.m in Sources */,
 				342DFABF1EFCF012003DED55 /* PackageDataSource.m in Sources */,
 				342DFA2B1EFCA4E3003DED55 /* AppDelegate.m in Sources */,
+				34C1938F1F4D60A800CD7F72 /* CustomTableViewCell.m in Sources */,
 				342DFA281EFCA4E3003DED55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

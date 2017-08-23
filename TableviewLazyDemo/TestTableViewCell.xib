@@ -42,7 +42,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="textLabel" destination="U8Y-oo-Ykd" id="5Ya-ow-18U"/>
+                <outlet property="otherLabel" destination="U8Y-oo-Ykd" id="Sio-dv-XcG"/>
                 <outlet property="wordLabel" destination="PGH-Gf-vzw" id="Atx-iu-usP"/>
             </connections>
         </tableViewCell>

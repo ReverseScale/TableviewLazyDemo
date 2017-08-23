@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TestTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UILabel *otherLabel;
 
 @end
